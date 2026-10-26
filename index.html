@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Portal</title>
+  
+  <!-- Подключаем шрифт Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Ссылка на отдельный файл стилей CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Скрытые чекбоксы для управления состоянием темы и меню -->
+<input type="checkbox" id="theme" class="toggle" aria-label="Light/Dark Theme">
+<input type="checkbox" id="menu-toggle" class="toggle" aria-label="Open menu">
+<input type="checkbox" id="search-toggle" class="toggle" aria-label="Show search">
+
+<header class="site-header">
+  <a class="brand" href="#top">AI Portal</a>
+
+  <nav class="main-nav" aria-label="Main">
+    <ul>
+      <li><a href="#catalog">Neural Networks</a></li>
+      <li><a href="#catalog">Articles</a></li>
+      <li><a href="#subscribe">Trends</a></li>
+    </ul>
+  </nav>
+
+  <form class="search" role="search" action="#">
+    <label class="sr-only" for="q">Search</label>
+    <input id="q" type="search" placeholder="Search...">
+  </form>
+
+  <label for="search-toggle" class="icon-btn search-icon" aria-hidden="true">&#9906;</label>
+  <label for="menu-toggle" class="icon-btn burger" aria-hidden="true">&#9776;</label>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1>Guide to Generative AI in 2026</h1>
+    <p>Discover the best AI tools and models</p>
+    <a class="cta" href="#catalog">Read Digest</a>
+  </section>
+
+  <section id="catalog" class="catalog">
+    <h2>AI Tools Catalog</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="card-head">
+          <span class="card-icon">⚡</span>
+          <h3>ChatGPT</h3>
+        </div>
+        <p>Conversational AI assistant for writing and code</p>
+        <ul class="tags"><li>Text</li><li>Freemium</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <span class="card-icon">🎨</span>
+          <h3>Midjourney</h3>
+        </div>
+        <p>AI generator for stunning images and art</p>
+        <ul class="tags"><li>Paid</li><li>Image</li></ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <span class="card-icon">🧠</span>
+          <h3>Claude</h3>
+        </div>
+        <p>Advanced AI assistant for complex text tasks</p>
+        <ul class="tags"><li>Text</li><li>Free</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="subscribe" class="subscribe">
+    <form action="#" method="post">
+      <h2>Subscribe to Newsletter</h2>
+      <fieldset>
+        <label class="sr-only" for="email">Your Email</label>
+        <input id="email" name="email" type="email" required placeholder="Your Email">
+        <button type="submit">Subscribe</button>
+      </fieldset>
+      <small class="hint">Enter a valid email, e.g. name@example.com</small>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="legal">
+    <p>&copy; 2026 AI Portal. All rights reserved.</p>
+    <a href="https://github.com" target="_blank">GitHub Repository</a>
+  </div>
+  <label for="theme" class="theme-switch">
+    <span class="knob"></span>Light/Dark Theme
+  </label>
+</footer>
+
+</body>
+</html>
